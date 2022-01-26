@@ -1,14 +1,10 @@
 package savana
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions.{col, udf}
 import java.time.LocalDate
 import java.time.format.{DateTimeFormatter, DateTimeFormatterBuilder}
 import java.time.temporal.ChronoField
-import java.util.Date
-import org.apache.spark.sql.types.IntegerType
-
 
 object ClinicalService{
 
@@ -113,7 +109,6 @@ object ClinicalService{
      * mode("overwrite"): creates the file or overwrites it
      * csv("path"): desired path to store output csv
      */
-    case class Clinical(document_date:Date, patient_id:BigInt, gender:Int, Birthdate:Date, document_id:BigInt, service:String)
 
     val outputFixed = output
       .withColumn("original_document_date",col("original_document_date").cast("Date"))
