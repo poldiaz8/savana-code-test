@@ -1,0 +1,4 @@
+original_document_date,original_patient_id,original_gender,original_birthdate,original_document_id,original_service
+2018-08-11,5487589844736575979,NULL,04-1952,1400000001241646,Gastro_Surgery_Inpatient
+2018-08-07,8512266723729759158,female,01-01-1955,”1400000001243003”,Bone_Trauma_Emergency
+2018-08-17,0812263723429557523,female,1955-01-01,1400000001243553,Cardio_Acute_Outpatient
